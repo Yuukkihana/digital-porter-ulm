@@ -1,0 +1,52 @@
+/* The hero image */
+.hero-image-licht {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/photos/lichterserenadecover.jpg');
+    height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 3rem 2rem 25rem 6rem;
+    margin-bottom: 5rem;
+  }
+  
+
+ #hero-heading {
+    display: inline-block;
+    text-align: left;
+    color: #fff;
+
+
+    font-size: 45px;
+    font-weight: bold;
+    width: 23rem;
+  }
+
+ 
+.horizontal-scrollbars {
+    display: flex;
+    overflow-x: auto;
+    gap: 40px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.horizontal-scrollbar a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 36rem;
+    height: 22rem;
+    border-radius: 0;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    position: relative; }
+
+    .textlicht{
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+    }

@@ -1,0 +1,456 @@
+/* General Styles */
+body{
+    margin: 0%;
+    font-family: 'DM Sans';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 2rem;
+    color: #fff;
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
+/* Language selector */
+.language {
+    display: flex;
+    align-items: center;
+}
+
+.language-icon {
+    margin-right: 5px;
+    width: 3rem;
+}
+
+.language-selector {
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Search bar */
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border: none;
+    border-radius: 20rem;
+    font-size: 2rem;
+}
+
+.search-input::placeholder {
+    color: #aaa;
+}
+
+/* Headings */
+.heading {
+    margin: 20px;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 3rem;
+}
+
+h1{
+ font-size: 45px;
+ font-weight: 600;
+}
+
+.heading h1 {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 0px 1.8rem 1.8rem 0px;
+    font-size: 45px;
+    font-weight: bold;
+    width: 23rem;
+}
+
+/* Horizontal scrollbar */
+.horizontal-scrollbar {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.horizontal-scrollbar a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 1.8rem;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+
+}
+
+.horizontal-scrollbar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.horizontal-scrollbar .card-text {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.horizontal-scrollbar .card-text h3 {
+    margin: 0;
+    font-size: 45px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.horizontal-scrollbar .card-text p {
+    margin: 5px 0 0;
+    font-size: 21px;
+    color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Chatbot */
+.spatzi{
+    margin-top: 7rem;
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+.spatz{
+    text-align: center;
+}
+
+/* Aktuelles */
+  .horizontal-scroller {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.horizontal-scroller a {
+    display: block;
+    flex: 0 0 auto;
+    width: 50rem;
+    height: 30rem;
+    border-radius: 1.8rem;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+}
+
+.horizontal-scroller img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.horizontal-scroller .card-text {
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.horizontal-scroller .card-text h3 {
+    margin: 0;
+    font-size: 45px;
+}
+
+/* Tourismus */
+.tourism{
+    display: flex;
+    font-size: 35px;
+    border-radius: 1.8rem;
+    border: 4px solid black;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+}
+
+.arrow{
+margin-right: 3rem;
+align-self: center;
+}
+.title p{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 4rem;
+}
+
+.ulm-erleben{
+margin-top: 5rem;
+text-align: center;
+}
+
+.ulm-container{
+    text-align: center;
+}
+/* Hilfe */
+/* Accordion Item */
+.accordion {
+margin-left: 5rem;
+margin-right: 5rem;
+margin-top: 3.5rem;
+}
+.accordion-item {
+    border-radius: 1.8rem;
+    border: 4px solid black;
+    margin-bottom: 3.5rem;
+    overflow: hidden;
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Icon and Header Alignment */
+.accordion-header .icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+
+.accordion-header h3 {
+    margin: 0;
+    flex-grow: 1;
+    font-size: 35px;
+    margin-left: 1.5rem;
+}
+
+.accordion-header .arrow {
+    transition: transform 0.3s ease;
+}
+
+/* Rotate Arrow When Active */
+.accordion-header.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* .accordion-header.active {
+    background-color: black;
+    color: white;
+}
+
+/* Accordion Content */
+.accordion-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+}*/
+
+.accordion-content p {
+    margin: 0;
+    font-size: 35px;
+    margin-left: 2rem;
+    padding: 25px;
+    
+}
+
+.terminb{
+    border-radius: 1.8rem;
+    border: 4px solid black;
+    margin-bottom: 3.5rem;
+    margin-left: 1.5rem;
+    margin-right: 10rem;
+}
+
+.terminart{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+.raum{
+    margin-left: 3rem;
+}
+
+.beschreibung{
+    margin-left: 4rem;
+    font-size: 32px;
+}
+
+/*Footer */
+.footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #000;
+        padding: 2rem;
+        color: #fff;
+        margin-top: auto;
+    }
+
+.back-icon {
+    margin-right: 5px;
+    width: 1.5rem;
+}
+.home-icon {
+    margin-right: 5px;
+    width: 3rem;
+}
+.menu-icon {
+    margin-right: 5px;
+    width: 3rem;
+}
+
+/*Bus und Bahn*/
+
+/*SWU Buttons*/
+
+.cardcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.buttoncontainer{
+    padding: 1rem 5rem 1rem 5rem;
+    text-align: center;
+    
+}
+.center-text{
+    text-align: center;
+    font-size: 32px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text{
+    text-align: center;
+}
+.swuButton {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid black;
+    border-radius: 1.8rem;
+    padding: 0.5rem 4rem 0.5rem 4rem;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+.icon-button{
+    width: 40px;
+    margin-right: 2rem;
+}
+/*QR-Cards*/
+
+.rectangle {
+    color: white;
+    background-color: #000;
+    padding: 1.5rem;
+    border-radius: 1.8rem 1.8rem 0px 0px;
+    font-size: 35px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2.2rem;
+    align-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25%;
+    text-align: center;
+    border: 4px solid black;
+    font-size: 35px;
+  }
+
+  .qr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* The hero image */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/photos/bus.png');
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 3rem 2rem 25rem 6rem;
+    margin-bottom: 5rem;
+  }
+  
+
+ #hero-heading {
+    display: inline-block;
+    text-align: left;
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    width: 23rem;
+  }
+
+@media (max-width: 900px) {
+    .search-input {
+        width: 80%;
+    }
+    .horizontal-scrollbar a {
+        width: 15rem;
+        height:15rem;
+    }
+    .horizontal-scrollbar .card-text h3 {
+        font-size: 30px;
+    }
+    .horizontal-scroller .card-text h3 {
+        font-size: 30px;
+    }
+    .horizontal-scrollbar .card-text p {
+        margin: 5px 0 0;
+        font-size: 15px;
+        color: #fff;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .card h3 {
+        font-size: 15px;
+    }
+}
